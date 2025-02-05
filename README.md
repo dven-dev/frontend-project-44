@@ -60,5 +60,4 @@ Command to run game: brain-prime
 
 [![asciicast](https://asciinema.org/a/DcHsW0MjboxpUbF84Lo3zw9hP.svg)](https://asciinema.org/a/DcHsW0MjboxpUbF84Lo3zw9hP)
 
-## Commands to run games:
-brain-calc, brain-even, brain-games, brain-gcd, brain-prime, brain-progression.
+
