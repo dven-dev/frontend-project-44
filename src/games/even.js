@@ -1,8 +1,8 @@
+import getRandomNumber from '../utils/randomizer.js';
+
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => num % 2 === 0;
-
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const generateRound = () => {
   const number = getRandomNumber(1, 100);
@@ -12,4 +12,7 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-export { generateRound, description };
+export default { 
+  description, 
+  generateRound, 
+};

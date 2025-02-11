@@ -1,4 +1,4 @@
-const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+import getRandomNumber from '../utils/randomizer.js';
 
 const description = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
@@ -12,7 +12,7 @@ const calculate = (num1, num2, operator) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error(`Unknown operator: '${operator}'`);
   }
 };
 
@@ -27,4 +27,7 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-export { generateRound, description };
+export default { 
+  description, 
+  generateRound, 
+};

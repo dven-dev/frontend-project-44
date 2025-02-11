@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/dven-dev/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/dven-dev/frontend-project-44/actions)",
+  "description": "Console games to train your brain.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,10 +27,6 @@
     "eslint": "^8.57.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "globals": "^15.14.0",
-    "react": "^19.0.0"
+    "globals": "^15.14.0"
   }
 }
