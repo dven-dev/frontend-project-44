@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils/randomizer.js';
+import { runGame, getRandomNumber } from '../index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isPrime = (num) => {
@@ -16,7 +16,9 @@ const generateRound = () => {
 
   return [question, correctAnswer];
 };
-export default { 
-  description, 
-  generateRound, 
+const game = {
+  description,
+  generateRound,
 };
+
+export default () => runGame(game);

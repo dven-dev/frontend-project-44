@@ -1,4 +1,4 @@
-import getRandomNumber from '../utils/randomizer.js';
+import { runGame, getRandomNumber } from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -24,7 +24,9 @@ const generateRound = () => {
   return [question, correctAnswer];
 };
 
-export default { 
-  description, 
-  generateRound, 
+const game = {
+  description,
+  generateRound,
 };
+
+export default () => runGame(game);
